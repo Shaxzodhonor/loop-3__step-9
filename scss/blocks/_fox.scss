@@ -1,0 +1,81 @@
+.fox {
+    padding: 15px 0px 1px 90px;
+    background-color: #fff;
+    overflow: hidden;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+.img-box::before {
+    position: absolute;
+    margin-left: -50px;
+    margin-top: -30px;
+    background-image: url(../img/desktop-monitor.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    content: " ";
+}
+.fox__menu {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.fox__item ~ .fox__item {
+    margin-left: 20px;
+    color: rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+}
+.fox__item--active {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.img-wrap::before{
+    background-image: url(../img/play-circle.svg);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    content: " ";
+}
+
+.img-box__item--absolute {
+    margin-right: -110px;
+    
+}
+.img-box__image {
+    box-shadow: 1px 18px 13px -15px;
+    width: 170px;
+    height: 100px;
+    transition: all 0.3s ease-in;
+}
+.img-box__image:nth-child(3) {
+    transform: scale(1.3);
+}
+.img-box__item--active {
+    margin-right: 0px;
+}
+.img-box__time {
+    font-size: 11px;
+    margin-bottom: 0;
+    opacity: 0.5;
+}
+.img-box__title {
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+
