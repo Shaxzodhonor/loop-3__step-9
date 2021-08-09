@@ -517,10 +517,23 @@ img {
 }
 
 .fox {
-  padding: 15px 0px 1px 90px;
+  padding: 15px 0px 0px 90px;
   background-color: #fff;
   overflow: hidden;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.fox::after {
+  background-color: #a9dcf0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90px;
+  height: 7px;
+  border-radius: 20px;
+  content: " ";
 }
 
 .img-box::before {
